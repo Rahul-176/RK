@@ -1,0 +1,26 @@
+// User function Template for C++
+
+class Solution {
+  public:
+    string toLower(string& s) {
+        // code here
+        string result="";
+        
+        for(char ch : s)
+        {
+            if(ch>='A'&& ch<='Z')
+            {
+                result +=(ch+32);
+            }else
+            {
+               result += ch; 
+            }
+            
+            
+        }
+        
+        return result;
+        
+        
+    }
+};
